@@ -11,6 +11,22 @@ const connect = function () {
   conn.on('connect', () => {
     console.log('Successfully connected to game server');
     conn.write("Name: LMI");
+
+    // setInterval(() => {
+    //   conn.write("Move: up");
+    // }, 500);
+
+    // setInterval(() => {
+    //   conn.write("Move: down");
+    // }, 1500);
+
+    // setInterval(() => {
+    //   conn.write("Move: left");
+    // }, 2000);
+
+    // setInterval(() => {
+    //   conn.write("Move: right");
+    // }, 1000);
   });
 
   conn.on('data', (data) => {

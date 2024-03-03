@@ -9,7 +9,7 @@ const setupInput = function () {
   return stdin;
 };
 
-const handleUserInput = function () {
+const handleUserInput = function (key) {
   if (key === '\u0003') {
     process.exit();
   }

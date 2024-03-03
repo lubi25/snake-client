@@ -2,7 +2,7 @@ const { moveUp, moveDown, moveRight, moveLeft, sayHowAreYou, saySlither, sayRace
 
 let connection;
 
-const setupInput = function (conn) {
+const setupInput = function(conn) {
   connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
@@ -12,7 +12,7 @@ const setupInput = function (conn) {
   return stdin;
 };
 
-const handleUserInput = function (key) {
+const handleUserInput = function(key) {
 
   if (key === '\u0003') {
     process.exit();

@@ -18,19 +18,19 @@ const handleUserInput = function(key) {
     process.exit();
   }
 
-  if (key === 'w') {
+  if (key === 'w' || key === 'W') {
     connection.write(moveUp);
   }
 
-  if (key === 'a') {
+  if (key === 'a' || key === 'A') {
     connection.write(moveLeft);
   }
 
-  if (key === 's') {
+  if (key === 's' || key === 'S') {
     connection.write(moveDown);
   }
 
-  if (key === 'd') {
+  if (key === 'd' || key === 'D') {
     connection.write(moveRight);
   }
 
